@@ -4,8 +4,8 @@ if (!API_BASE_URL) {
     throw new Error("API_BASE_URL is not defined");
 }
 
-export const getAllBooks = async function(): Promise<Book[]> {
-    const res = await fetch(`${API_BASE_URL}/books`,{
+export const getAllBooks = async function (): Promise<Book[]> {
+    const res = await fetch(`${API_BASE_URL}/api/books`, {
         cache: "no-store"
     });
 
